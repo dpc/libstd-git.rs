@@ -1,0 +1,16 @@
+[package]
+name = "std"
+version = "0.0.1"
+description = "Fetch and build libstd"
+authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
+build = "build.rs"
+
+[lib]
+name = "std"
+path = "./rust/src/libstd/lib.rs"
+
+[dependencies.core]
+git = "https://github.com/dpc/libcore-git.rs.git"
+
+[dependencies.collections]
+git = "https://github.com/dpc/libcollections-git.rs.git"
